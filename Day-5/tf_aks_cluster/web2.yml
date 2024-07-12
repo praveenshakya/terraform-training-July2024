@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webpod2
+spec:
+  containers:
+  - name: myweb1
+    image: httpd
+  - name: myweb2
+    image: redis

@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+    - name: setup motd
+      copy: dest=/etc/motd content="Hello from Praveen Kumar"
+    - name: install apache
+      apt: name=apache2 state=present
